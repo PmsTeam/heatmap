@@ -65,15 +65,15 @@ static bool constants_created = false;
 
 static void createModuleConstants( void )
 {
-    const_str_digest_a39dc67e328baebe6c5d74485f07012a = UNSTREAM_STRING( &constant_bin[ 33436 ], 141, 0 );
-    const_str_plain_DeprecatedBundleWarning = UNSTREAM_STRING( &constant_bin[ 33577 ], 23, 1 );
-    const_str_digest_30ebb52719648ba341b2f11a8b1b97a3 = UNSTREAM_STRING( &constant_bin[ 33600 ], 12, 0 );
-    const_str_digest_ade8678a65277f3d2b0eb2cb67698170 = UNSTREAM_STRING( &constant_bin[ 33612 ], 45, 0 );
-    const_str_digest_17996ef8d8cba664fbfd1662d6aeb8d1 = UNSTREAM_STRING( &constant_bin[ 33657 ], 10, 0 );
-    const_str_digest_7ab210378ed10fb8a66d1c4872e0470d = UNSTREAM_STRING( &constant_bin[ 33667 ], 73, 0 );
-    const_str_digest_991032b577f29ca82fd22db635f29f74 = UNSTREAM_STRING( &constant_bin[ 33740 ], 21, 0 );
-    const_str_digest_841df4a82a8972a6c0a533d868301b49 = UNSTREAM_STRING( &constant_bin[ 33761 ], 85, 0 );
-    const_str_digest_aa8997494e69f6e0a65db7ba2f587686 = UNSTREAM_STRING( &constant_bin[ 33846 ], 8, 0 );
+    const_str_digest_a39dc67e328baebe6c5d74485f07012a = UNSTREAM_STRING( &constant_bin[ 33372 ], 141, 0 );
+    const_str_plain_DeprecatedBundleWarning = UNSTREAM_STRING( &constant_bin[ 33513 ], 23, 1 );
+    const_str_digest_30ebb52719648ba341b2f11a8b1b97a3 = UNSTREAM_STRING( &constant_bin[ 33536 ], 12, 0 );
+    const_str_digest_ade8678a65277f3d2b0eb2cb67698170 = UNSTREAM_STRING( &constant_bin[ 33548 ], 45, 0 );
+    const_str_digest_17996ef8d8cba664fbfd1662d6aeb8d1 = UNSTREAM_STRING( &constant_bin[ 33593 ], 10, 0 );
+    const_str_digest_7ab210378ed10fb8a66d1c4872e0470d = UNSTREAM_STRING( &constant_bin[ 33603 ], 73, 0 );
+    const_str_digest_991032b577f29ca82fd22db635f29f74 = UNSTREAM_STRING( &constant_bin[ 33676 ], 21, 0 );
+    const_str_digest_841df4a82a8972a6c0a533d868301b49 = UNSTREAM_STRING( &constant_bin[ 33697 ], 85, 0 );
+    const_str_digest_aa8997494e69f6e0a65db7ba2f587686 = UNSTREAM_STRING( &constant_bin[ 33782 ], 8, 0 );
 
     constants_created = true;
 }

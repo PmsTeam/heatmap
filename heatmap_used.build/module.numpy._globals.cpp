@@ -63,20 +63,20 @@ static bool constants_created = false;
 
 static void createModuleConstants( void )
 {
-    const_str_digest_8d9f2266e4a2b8328c89b572ff9cc038 = UNSTREAM_STRING( &constant_bin[ 38939 ], 39, 0 );
-    const_str_plain___ALL__ = UNSTREAM_STRING( &constant_bin[ 38978 ], 7, 1 );
-    const_str_digest_e06677149df4fe03e39f914eac1ae3c4 = UNSTREAM_STRING( &constant_bin[ 38985 ], 23, 0 );
-    const_str_plain__is_loaded = UNSTREAM_STRING( &constant_bin[ 39008 ], 10, 1 );
-    const_str_digest_1fa3ef7ab6cb10e6941391f74b0ec935 = UNSTREAM_STRING( &constant_bin[ 39018 ], 310, 0 );
+    const_str_digest_8d9f2266e4a2b8328c89b572ff9cc038 = UNSTREAM_STRING( &constant_bin[ 38875 ], 39, 0 );
+    const_str_plain___ALL__ = UNSTREAM_STRING( &constant_bin[ 38914 ], 7, 1 );
+    const_str_digest_e06677149df4fe03e39f914eac1ae3c4 = UNSTREAM_STRING( &constant_bin[ 38921 ], 23, 0 );
+    const_str_plain__is_loaded = UNSTREAM_STRING( &constant_bin[ 38944 ], 10, 1 );
+    const_str_digest_1fa3ef7ab6cb10e6941391f74b0ec935 = UNSTREAM_STRING( &constant_bin[ 38954 ], 310, 0 );
     const_list_b909a47de8e0dfa362d4dddbb85a1fe1_list = PyList_New( 3 );
     PyList_SET_ITEM( const_list_b909a47de8e0dfa362d4dddbb85a1fe1_list, 0, const_str_plain_ModuleDeprecationWarning ); Py_INCREF( const_str_plain_ModuleDeprecationWarning );
     PyList_SET_ITEM( const_list_b909a47de8e0dfa362d4dddbb85a1fe1_list, 1, const_str_plain_VisibleDeprecationWarning ); Py_INCREF( const_str_plain_VisibleDeprecationWarning );
     PyList_SET_ITEM( const_list_b909a47de8e0dfa362d4dddbb85a1fe1_list, 2, const_str_plain__NoValue ); Py_INCREF( const_str_plain__NoValue );
-    const_str_digest_c4818f4c7678929ac2143c2744f099bc = UNSTREAM_STRING( &constant_bin[ 39328 ], 585, 0 );
-    const_str_digest_7b134e7d928ce177f7e383fc8cc7851f = UNSTREAM_STRING( &constant_bin[ 39913 ], 47, 0 );
-    const_str_digest_36f025c2ae62ec81f44eab7a5d4fb586 = UNSTREAM_STRING( &constant_bin[ 39960 ], 225, 0 );
-    const_str_digest_9e9eca8947418183630fd19f8c915a83 = UNSTREAM_STRING( &constant_bin[ 38949 ], 14, 0 );
-    const_str_digest_6606441797b99ce3ee52b8fc5206322a = UNSTREAM_STRING( &constant_bin[ 40185 ], 174, 0 );
+    const_str_digest_c4818f4c7678929ac2143c2744f099bc = UNSTREAM_STRING( &constant_bin[ 39264 ], 585, 0 );
+    const_str_digest_7b134e7d928ce177f7e383fc8cc7851f = UNSTREAM_STRING( &constant_bin[ 39849 ], 47, 0 );
+    const_str_digest_36f025c2ae62ec81f44eab7a5d4fb586 = UNSTREAM_STRING( &constant_bin[ 39896 ], 225, 0 );
+    const_str_digest_9e9eca8947418183630fd19f8c915a83 = UNSTREAM_STRING( &constant_bin[ 38885 ], 14, 0 );
+    const_str_digest_6606441797b99ce3ee52b8fc5206322a = UNSTREAM_STRING( &constant_bin[ 40121 ], 174, 0 );
 
     constants_created = true;
 }

@@ -49,14 +49,14 @@ static bool constants_created = false;
 
 static void createModuleConstants( void )
 {
-    const_str_plain_pkgutil = UNSTREAM_STRING( &constant_bin[ 13695 ], 7, 1 );
-    const_str_digest_db245500be6aea4306e1f480a7e2f880 = UNSTREAM_STRING( &constant_bin[ 13702 ], 18, 0 );
-    const_str_digest_d6f75004b0f7c0af100113f2b200dabc = UNSTREAM_STRING( &constant_bin[ 13720 ], 39, 0 );
-    const_str_digest_8bb7c485bc0ad25d07659ccce8d08398 = UNSTREAM_STRING( &constant_bin[ 13759 ], 51, 0 );
+    const_str_plain_pkgutil = UNSTREAM_STRING( &constant_bin[ 13631 ], 7, 1 );
+    const_str_digest_db245500be6aea4306e1f480a7e2f880 = UNSTREAM_STRING( &constant_bin[ 13638 ], 18, 0 );
+    const_str_digest_d6f75004b0f7c0af100113f2b200dabc = UNSTREAM_STRING( &constant_bin[ 13656 ], 39, 0 );
+    const_str_digest_8bb7c485bc0ad25d07659ccce8d08398 = UNSTREAM_STRING( &constant_bin[ 13695 ], 51, 0 );
     const_list_str_digest_d6f75004b0f7c0af100113f2b200dabc_list = PyList_New( 1 );
     PyList_SET_ITEM( const_list_str_digest_d6f75004b0f7c0af100113f2b200dabc_list, 0, const_str_digest_d6f75004b0f7c0af100113f2b200dabc ); Py_INCREF( const_str_digest_d6f75004b0f7c0af100113f2b200dabc );
-    const_str_plain_backports = UNSTREAM_STRING( &constant_bin[ 13710 ], 9, 1 );
-    const_str_plain_extend_path = UNSTREAM_STRING( &constant_bin[ 13810 ], 11, 1 );
+    const_str_plain_backports = UNSTREAM_STRING( &constant_bin[ 13646 ], 9, 1 );
+    const_str_plain_extend_path = UNSTREAM_STRING( &constant_bin[ 13746 ], 11, 1 );
 
     constants_created = true;
 }

@@ -60,23 +60,23 @@ static bool constants_created = false;
 
 static void createModuleConstants( void )
 {
-    const_str_plain_wintypes = UNSTREAM_STRING( &constant_bin[ 38606 ], 8, 1 );
+    const_str_plain_wintypes = UNSTREAM_STRING( &constant_bin[ 38542 ], 8, 1 );
     const_tuple_str_plain_windll_str_plain_wintypes_tuple = PyTuple_New( 2 );
     PyTuple_SET_ITEM( const_tuple_str_plain_windll_str_plain_wintypes_tuple, 0, const_str_plain_windll ); Py_INCREF( const_str_plain_windll );
     PyTuple_SET_ITEM( const_tuple_str_plain_windll_str_plain_wintypes_tuple, 1, const_str_plain_wintypes ); Py_INCREF( const_str_plain_wintypes );
-    const_str_digest_c5adb82634d19b5ff9259afec0f02f59 = UNSTREAM_STRING( &constant_bin[ 38614 ], 84, 0 );
-    const_str_plain_has_feature = UNSTREAM_STRING( &constant_bin[ 38698 ], 11, 1 );
-    const_str_digest_b6998834c7d802c2eb954a04213daf08 = UNSTREAM_STRING( &constant_bin[ 38709 ], 51, 0 );
+    const_str_digest_c5adb82634d19b5ff9259afec0f02f59 = UNSTREAM_STRING( &constant_bin[ 38550 ], 84, 0 );
+    const_str_plain_has_feature = UNSTREAM_STRING( &constant_bin[ 38634 ], 11, 1 );
+    const_str_digest_b6998834c7d802c2eb954a04213daf08 = UNSTREAM_STRING( &constant_bin[ 38645 ], 51, 0 );
     const_tuple_b0fcdd92a2aab3386ca2ee50634eaeb2_tuple = PyTuple_New( 2 );
     PyTuple_SET_ITEM( const_tuple_b0fcdd92a2aab3386ca2ee50634eaeb2_tuple, 0, const_str_digest_c5adb82634d19b5ff9259afec0f02f59 ); Py_INCREF( const_str_digest_c5adb82634d19b5ff9259afec0f02f59 );
-    const_str_digest_53943f93b84b8baa5b7198990780ce43 = UNSTREAM_STRING( &constant_bin[ 38760 ], 53, 0 );
+    const_str_digest_53943f93b84b8baa5b7198990780ce43 = UNSTREAM_STRING( &constant_bin[ 38696 ], 53, 0 );
     PyTuple_SET_ITEM( const_tuple_b0fcdd92a2aab3386ca2ee50634eaeb2_tuple, 1, const_str_digest_53943f93b84b8baa5b7198990780ce43 ); Py_INCREF( const_str_digest_53943f93b84b8baa5b7198990780ce43 );
-    const_str_digest_d2f7521d1810689d2469b77a4bfedb6c = UNSTREAM_STRING( &constant_bin[ 38813 ], 32, 0 );
-    const_str_plain_argtypes = UNSTREAM_STRING( &constant_bin[ 38845 ], 8, 1 );
-    const_str_digest_1abe642f0bb87625fbedd523e08e1df8 = UNSTREAM_STRING( &constant_bin[ 38853 ], 56, 0 );
-    const_str_digest_8fa80cbfe9fb01c3d3710030f0c55769 = UNSTREAM_STRING( &constant_bin[ 38821 ], 23, 0 );
-    const_str_plain_DWORD = UNSTREAM_STRING( &constant_bin[ 38909 ], 5, 1 );
-    const_str_plain_IsProcessorFeaturePresent = UNSTREAM_STRING( &constant_bin[ 38914 ], 25, 1 );
+    const_str_digest_d2f7521d1810689d2469b77a4bfedb6c = UNSTREAM_STRING( &constant_bin[ 38749 ], 32, 0 );
+    const_str_plain_argtypes = UNSTREAM_STRING( &constant_bin[ 38781 ], 8, 1 );
+    const_str_digest_1abe642f0bb87625fbedd523e08e1df8 = UNSTREAM_STRING( &constant_bin[ 38789 ], 56, 0 );
+    const_str_digest_8fa80cbfe9fb01c3d3710030f0c55769 = UNSTREAM_STRING( &constant_bin[ 38757 ], 23, 0 );
+    const_str_plain_DWORD = UNSTREAM_STRING( &constant_bin[ 38845 ], 5, 1 );
+    const_str_plain_IsProcessorFeaturePresent = UNSTREAM_STRING( &constant_bin[ 38850 ], 25, 1 );
 
     constants_created = true;
 }

@@ -79,10 +79,10 @@ static bool constants_created = false;
 
 static void createModuleConstants( void )
 {
-    const_tuple_a40ded0241d414021d252a589e18a00f_tuple = PyMarshal_ReadObjectFromString( (char *)&constant_bin[ 33854 ], 540 );
-    const_str_digest_ec96d7d78f78893dbf1846a7d2216a77 = UNSTREAM_STRING( &constant_bin[ 34394 ], 45, 0 );
-    const_unicode_digest_318efd49bd1090a16461c05e657d055b = UNSTREAM_UNICODE( &constant_bin[ 34439 ], 68 );
-    const_str_digest_0aa6d3163b6fe4047701ac163c4478ac = UNSTREAM_STRING( &constant_bin[ 34507 ], 21, 0 );
+    const_tuple_a40ded0241d414021d252a589e18a00f_tuple = PyMarshal_ReadObjectFromString( (char *)&constant_bin[ 33790 ], 540 );
+    const_str_digest_ec96d7d78f78893dbf1846a7d2216a77 = UNSTREAM_STRING( &constant_bin[ 34330 ], 45, 0 );
+    const_unicode_digest_318efd49bd1090a16461c05e657d055b = UNSTREAM_UNICODE( &constant_bin[ 34375 ], 68 );
+    const_str_digest_0aa6d3163b6fe4047701ac163c4478ac = UNSTREAM_STRING( &constant_bin[ 34443 ], 21, 0 );
 
     constants_created = true;
 }

@@ -80,26 +80,26 @@ static void createModuleConstants( void )
     PyTuple_SET_ITEM( const_tuple_str_plain_Polynomial_tuple, 0, const_str_plain_Polynomial ); Py_INCREF( const_str_plain_Polynomial );
     const_tuple_str_plain_Legendre_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_plain_Legendre_tuple, 0, const_str_plain_Legendre ); Py_INCREF( const_str_plain_Legendre );
-    const_str_plain_hermite = UNSTREAM_STRING( &constant_bin[ 1272107 ], 7, 1 );
+    const_str_plain_hermite = UNSTREAM_STRING( &constant_bin[ 1272043 ], 7, 1 );
     const_tuple_str_plain_HermiteE_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_plain_HermiteE_tuple, 0, const_str_plain_HermiteE ); Py_INCREF( const_str_plain_HermiteE );
     const_list_str_digest_948f810014df20996e31823b7576df3c_list = PyList_New( 1 );
-    const_str_digest_948f810014df20996e31823b7576df3c = UNSTREAM_STRING( &constant_bin[ 1272114 ], 46, 0 );
+    const_str_digest_948f810014df20996e31823b7576df3c = UNSTREAM_STRING( &constant_bin[ 1272050 ], 46, 0 );
     PyList_SET_ITEM( const_list_str_digest_948f810014df20996e31823b7576df3c_list, 0, const_str_digest_948f810014df20996e31823b7576df3c ); Py_INCREF( const_str_digest_948f810014df20996e31823b7576df3c );
-    const_str_digest_311480ed9e01ebed4183274dbebedab9 = UNSTREAM_STRING( &constant_bin[ 1272160 ], 16, 0 );
+    const_str_digest_311480ed9e01ebed4183274dbebedab9 = UNSTREAM_STRING( &constant_bin[ 1272096 ], 16, 0 );
     const_tuple_str_plain_Hermite_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_plain_Hermite_tuple, 0, const_str_plain_Hermite ); Py_INCREF( const_str_plain_Hermite );
     const_tuple_str_plain_Chebyshev_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_plain_Chebyshev_tuple, 0, const_str_plain_Chebyshev ); Py_INCREF( const_str_plain_Chebyshev );
-    const_str_plain_laguerre = UNSTREAM_STRING( &constant_bin[ 1272176 ], 8, 1 );
-    const_str_plain_chebyshev = UNSTREAM_STRING( &constant_bin[ 1272184 ], 9, 1 );
-    const_str_plain_legendre = UNSTREAM_STRING( &constant_bin[ 1272193 ], 8, 1 );
-    const_str_digest_13117039c6b0d0710f4482b27f37ae72 = UNSTREAM_STRING( &constant_bin[ 1272201 ], 777, 0 );
+    const_str_plain_laguerre = UNSTREAM_STRING( &constant_bin[ 1272112 ], 8, 1 );
+    const_str_plain_chebyshev = UNSTREAM_STRING( &constant_bin[ 1272120 ], 9, 1 );
+    const_str_plain_legendre = UNSTREAM_STRING( &constant_bin[ 1272129 ], 8, 1 );
+    const_str_digest_13117039c6b0d0710f4482b27f37ae72 = UNSTREAM_STRING( &constant_bin[ 1272137 ], 777, 0 );
     const_tuple_str_plain_Laguerre_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_plain_Laguerre_tuple, 0, const_str_plain_Laguerre ); Py_INCREF( const_str_plain_Laguerre );
-    const_str_plain_hermite_e = UNSTREAM_STRING( &constant_bin[ 1272978 ], 9, 1 );
-    const_str_digest_e925909afe85ea6a3e56bb4c1a8bd605 = UNSTREAM_STRING( &constant_bin[ 1272987 ], 25, 0 );
-    const_str_digest_d725063a16123f479afdd55a2da7c519 = UNSTREAM_STRING( &constant_bin[ 1273012 ], 58, 0 );
+    const_str_plain_hermite_e = UNSTREAM_STRING( &constant_bin[ 1272914 ], 9, 1 );
+    const_str_digest_e925909afe85ea6a3e56bb4c1a8bd605 = UNSTREAM_STRING( &constant_bin[ 1272923 ], 25, 0 );
+    const_str_digest_d725063a16123f479afdd55a2da7c519 = UNSTREAM_STRING( &constant_bin[ 1272948 ], 58, 0 );
 
     constants_created = true;
 }

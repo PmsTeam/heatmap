@@ -64,18 +64,18 @@ static bool constants_created = false;
 
 static void createModuleConstants( void )
 {
-    const_str_plain__inspect = UNSTREAM_STRING( &constant_bin[ 232230 ], 8, 1 );
-    const_str_digest_debbfb7d4cffd6e0773fb66f440d0d39 = UNSTREAM_STRING( &constant_bin[ 232238 ], 239, 0 );
-    const_str_digest_2a81da0a64105c559358acdbea78448b = UNSTREAM_STRING( &constant_bin[ 232477 ], 21, 0 );
+    const_str_plain__inspect = UNSTREAM_STRING( &constant_bin[ 232166 ], 8, 1 );
+    const_str_digest_debbfb7d4cffd6e0773fb66f440d0d39 = UNSTREAM_STRING( &constant_bin[ 232174 ], 239, 0 );
+    const_str_digest_2a81da0a64105c559358acdbea78448b = UNSTREAM_STRING( &constant_bin[ 232413 ], 21, 0 );
     const_tuple_str_plain__inspect_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_plain__inspect_tuple, 0, const_str_plain__inspect ); Py_INCREF( const_str_plain__inspect );
     const_list_str_digest_e202a54aff475c32d959437c471d4cad_list = PyList_New( 1 );
-    const_str_digest_e202a54aff475c32d959437c471d4cad = UNSTREAM_STRING( &constant_bin[ 232498 ], 42, 0 );
+    const_str_digest_e202a54aff475c32d959437c471d4cad = UNSTREAM_STRING( &constant_bin[ 232434 ], 42, 0 );
     PyList_SET_ITEM( const_list_str_digest_e202a54aff475c32d959437c471d4cad_list, 0, const_str_digest_e202a54aff475c32d959437c471d4cad ); Py_INCREF( const_str_digest_e202a54aff475c32d959437c471d4cad );
     const_tuple_str_plain_py3k_tuple = PyTuple_New( 1 );
-    const_str_plain_py3k = UNSTREAM_STRING( &constant_bin[ 232540 ], 4, 1 );
+    const_str_plain_py3k = UNSTREAM_STRING( &constant_bin[ 232476 ], 4, 1 );
     PyTuple_SET_ITEM( const_tuple_str_plain_py3k_tuple, 0, const_str_plain_py3k ); Py_INCREF( const_str_plain_py3k );
-    const_str_digest_0282d6710ed1503b70e1466472cdb5a2 = UNSTREAM_STRING( &constant_bin[ 232544 ], 54, 0 );
+    const_str_digest_0282d6710ed1503b70e1466472cdb5a2 = UNSTREAM_STRING( &constant_bin[ 232480 ], 54, 0 );
 
     constants_created = true;
 }

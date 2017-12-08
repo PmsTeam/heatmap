@@ -94,35 +94,35 @@ static bool constants_created = false;
 
 static void createModuleConstants( void )
 {
-    const_str_plain_twodim_base = UNSTREAM_STRING( &constant_bin[ 607002 ], 11, 1 );
-    const_str_plain_emath = UNSTREAM_STRING( &constant_bin[ 607013 ], 5, 1 );
+    const_str_plain_twodim_base = UNSTREAM_STRING( &constant_bin[ 606938 ], 11, 1 );
+    const_str_plain_emath = UNSTREAM_STRING( &constant_bin[ 606949 ], 5, 1 );
     const_tuple_str_plain_scimath_tuple = PyTuple_New( 1 );
-    const_str_plain_scimath = UNSTREAM_STRING( &constant_bin[ 607018 ], 7, 1 );
+    const_str_plain_scimath = UNSTREAM_STRING( &constant_bin[ 606954 ], 7, 1 );
     PyTuple_SET_ITEM( const_tuple_str_plain_scimath_tuple, 0, const_str_plain_scimath ); Py_INCREF( const_str_plain_scimath );
-    const_str_plain_arraypad = UNSTREAM_STRING( &constant_bin[ 607025 ], 8, 1 );
+    const_str_plain_arraypad = UNSTREAM_STRING( &constant_bin[ 606961 ], 8, 1 );
     const_list_str_plain_emath_str_plain_math_str_plain_tracemalloc_domain_list = PyList_New( 3 );
     PyList_SET_ITEM( const_list_str_plain_emath_str_plain_math_str_plain_tracemalloc_domain_list, 0, const_str_plain_emath ); Py_INCREF( const_str_plain_emath );
     PyList_SET_ITEM( const_list_str_plain_emath_str_plain_math_str_plain_tracemalloc_domain_list, 1, const_str_plain_math ); Py_INCREF( const_str_plain_math );
-    const_str_plain_tracemalloc_domain = UNSTREAM_STRING( &constant_bin[ 607033 ], 18, 1 );
+    const_str_plain_tracemalloc_domain = UNSTREAM_STRING( &constant_bin[ 606969 ], 18, 1 );
     PyList_SET_ITEM( const_list_str_plain_emath_str_plain_math_str_plain_tracemalloc_domain_list, 2, const_str_plain_tracemalloc_domain ); Py_INCREF( const_str_plain_tracemalloc_domain );
-    const_str_digest_a8583e29b1c0eedaa1f165e55f2b3ed0 = UNSTREAM_STRING( &constant_bin[ 607051 ], 18, 0 );
-    const_str_plain_financial = UNSTREAM_STRING( &constant_bin[ 607069 ], 9, 1 );
+    const_str_digest_a8583e29b1c0eedaa1f165e55f2b3ed0 = UNSTREAM_STRING( &constant_bin[ 606987 ], 18, 0 );
+    const_str_plain_financial = UNSTREAM_STRING( &constant_bin[ 607005 ], 9, 1 );
     const_list_str_digest_29ceddd63f9559edf8a27710ce200ae8_list = PyList_New( 1 );
-    const_str_digest_29ceddd63f9559edf8a27710ce200ae8 = UNSTREAM_STRING( &constant_bin[ 607078 ], 39, 0 );
+    const_str_digest_29ceddd63f9559edf8a27710ce200ae8 = UNSTREAM_STRING( &constant_bin[ 607014 ], 39, 0 );
     PyList_SET_ITEM( const_list_str_digest_29ceddd63f9559edf8a27710ce200ae8_list, 0, const_str_digest_29ceddd63f9559edf8a27710ce200ae8 ); Py_INCREF( const_str_digest_29ceddd63f9559edf8a27710ce200ae8 );
-    const_str_plain_arraysetops = UNSTREAM_STRING( &constant_bin[ 607117 ], 11, 1 );
-    const_str_plain_index_tricks = UNSTREAM_STRING( &constant_bin[ 174671 ], 12, 1 );
-    const_str_plain_type_check = UNSTREAM_STRING( &constant_bin[ 607128 ], 10, 1 );
-    const_str_digest_363db690c7804b03d8d681bb80b04333 = UNSTREAM_STRING( &constant_bin[ 607138 ], 51, 0 );
+    const_str_plain_arraysetops = UNSTREAM_STRING( &constant_bin[ 607053 ], 11, 1 );
+    const_str_plain_index_tricks = UNSTREAM_STRING( &constant_bin[ 174607 ], 12, 1 );
+    const_str_plain_type_check = UNSTREAM_STRING( &constant_bin[ 607064 ], 10, 1 );
+    const_str_digest_363db690c7804b03d8d681bb80b04333 = UNSTREAM_STRING( &constant_bin[ 607074 ], 51, 0 );
     const_tuple_str_plain_Arrayterator_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_plain_Arrayterator_tuple, 0, const_str_plain_Arrayterator ); Py_INCREF( const_str_plain_Arrayterator );
-    const_str_plain_arrayterator = UNSTREAM_STRING( &constant_bin[ 607189 ], 12, 1 );
+    const_str_plain_arrayterator = UNSTREAM_STRING( &constant_bin[ 607125 ], 12, 1 );
     const_tuple_str_plain_tracemalloc_domain_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_plain_tracemalloc_domain_tuple, 0, const_str_plain_tracemalloc_domain ); Py_INCREF( const_str_plain_tracemalloc_domain );
-    const_str_plain__version = UNSTREAM_STRING( &constant_bin[ 2520 ], 8, 1 );
-    const_str_plain_npyio = UNSTREAM_STRING( &constant_bin[ 607201 ], 5, 1 );
-    const_str_plain_nanfunctions = UNSTREAM_STRING( &constant_bin[ 607206 ], 12, 1 );
-    const_str_plain_mixins = UNSTREAM_STRING( &constant_bin[ 607218 ], 6, 1 );
+    const_str_plain__version = UNSTREAM_STRING( &constant_bin[ 2456 ], 8, 1 );
+    const_str_plain_npyio = UNSTREAM_STRING( &constant_bin[ 607137 ], 5, 1 );
+    const_str_plain_nanfunctions = UNSTREAM_STRING( &constant_bin[ 607142 ], 12, 1 );
+    const_str_plain_mixins = UNSTREAM_STRING( &constant_bin[ 607154 ], 6, 1 );
 
     constants_created = true;
 }

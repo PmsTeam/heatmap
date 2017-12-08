@@ -54,14 +54,14 @@ static bool constants_created = false;
 
 static void createModuleConstants( void )
 {
-    const_str_digest_1ec20f34a17f9b95c9f067055f4f3a21 = UNSTREAM_STRING( &constant_bin[ 33361 ], 49, 0 );
-    const_str_digest_92858173ae4a1ee0e2bd7561fe7ff6d5 = UNSTREAM_STRING( &constant_bin[ 33361 ], 37, 0 );
-    const_str_digest_42ed74d34f7517c82326a26ccd697d59 = UNSTREAM_STRING( &constant_bin[ 33410 ], 10, 0 );
+    const_str_digest_1ec20f34a17f9b95c9f067055f4f3a21 = UNSTREAM_STRING( &constant_bin[ 33297 ], 49, 0 );
+    const_str_digest_92858173ae4a1ee0e2bd7561fe7ff6d5 = UNSTREAM_STRING( &constant_bin[ 33297 ], 37, 0 );
+    const_str_digest_42ed74d34f7517c82326a26ccd697d59 = UNSTREAM_STRING( &constant_bin[ 33346 ], 10, 0 );
     const_tuple_str_plain_where_str_plain_old_where_tuple = PyTuple_New( 2 );
     PyTuple_SET_ITEM( const_tuple_str_plain_where_str_plain_old_where_tuple, 0, const_str_plain_where ); Py_INCREF( const_str_plain_where );
     PyTuple_SET_ITEM( const_tuple_str_plain_where_str_plain_old_where_tuple, 1, const_str_plain_old_where ); Py_INCREF( const_str_plain_old_where );
-    const_str_plain_certifi = UNSTREAM_STRING( &constant_bin[ 33391 ], 7, 1 );
-    const_str_digest_e3372279ac622bcc524449ecfa1e730a = UNSTREAM_STRING( &constant_bin[ 33420 ], 16, 0 );
+    const_str_plain_certifi = UNSTREAM_STRING( &constant_bin[ 33327 ], 7, 1 );
+    const_str_digest_e3372279ac622bcc524449ecfa1e730a = UNSTREAM_STRING( &constant_bin[ 33356 ], 16, 0 );
     const_list_str_digest_92858173ae4a1ee0e2bd7561fe7ff6d5_list = PyList_New( 1 );
     PyList_SET_ITEM( const_list_str_digest_92858173ae4a1ee0e2bd7561fe7ff6d5_list, 0, const_str_digest_92858173ae4a1ee0e2bd7561fe7ff6d5 ); Py_INCREF( const_str_digest_92858173ae4a1ee0e2bd7561fe7ff6d5 );
 

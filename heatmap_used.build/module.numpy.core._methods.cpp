@@ -140,10 +140,10 @@ static bool constants_created = false;
 
 static void createModuleConstants( void )
 {
-    const_str_digest_9afcd1f17bbf28aaf02a241e8855a789 = UNSTREAM_STRING( &constant_bin[ 242534 ], 52, 0 );
-    const_str_plain_umr_sum = UNSTREAM_STRING( &constant_bin[ 242586 ], 7, 1 );
-    const_str_digest_79842a9c986864f65f8648fa2c43393c = UNSTREAM_STRING( &constant_bin[ 242593 ], 28, 0 );
-    const_str_plain_umr_minimum = UNSTREAM_STRING( &constant_bin[ 242621 ], 11, 1 );
+    const_str_digest_9afcd1f17bbf28aaf02a241e8855a789 = UNSTREAM_STRING( &constant_bin[ 242470 ], 52, 0 );
+    const_str_plain_umr_sum = UNSTREAM_STRING( &constant_bin[ 242522 ], 7, 1 );
+    const_str_digest_79842a9c986864f65f8648fa2c43393c = UNSTREAM_STRING( &constant_bin[ 242529 ], 28, 0 );
+    const_str_plain_umr_minimum = UNSTREAM_STRING( &constant_bin[ 242557 ], 11, 1 );
     const_tuple_f123bc675f0c699860fde9efcb75decc_tuple = PyTuple_New( 11 );
     PyTuple_SET_ITEM( const_tuple_f123bc675f0c699860fde9efcb75decc_tuple, 0, const_str_plain_a ); Py_INCREF( const_str_plain_a );
     PyTuple_SET_ITEM( const_tuple_f123bc675f0c699860fde9efcb75decc_tuple, 1, const_str_plain_axis ); Py_INCREF( const_str_plain_axis );
@@ -152,9 +152,9 @@ static void createModuleConstants( void )
     PyTuple_SET_ITEM( const_tuple_f123bc675f0c699860fde9efcb75decc_tuple, 4, const_str_plain_ddof ); Py_INCREF( const_str_plain_ddof );
     PyTuple_SET_ITEM( const_tuple_f123bc675f0c699860fde9efcb75decc_tuple, 5, const_str_plain_keepdims ); Py_INCREF( const_str_plain_keepdims );
     PyTuple_SET_ITEM( const_tuple_f123bc675f0c699860fde9efcb75decc_tuple, 6, const_str_plain_arr ); Py_INCREF( const_str_plain_arr );
-    const_str_plain_rcount = UNSTREAM_STRING( &constant_bin[ 242632 ], 6, 1 );
+    const_str_plain_rcount = UNSTREAM_STRING( &constant_bin[ 242568 ], 6, 1 );
     PyTuple_SET_ITEM( const_tuple_f123bc675f0c699860fde9efcb75decc_tuple, 7, const_str_plain_rcount ); Py_INCREF( const_str_plain_rcount );
-    const_str_plain_arrmean = UNSTREAM_STRING( &constant_bin[ 242638 ], 7, 1 );
+    const_str_plain_arrmean = UNSTREAM_STRING( &constant_bin[ 242574 ], 7, 1 );
     PyTuple_SET_ITEM( const_tuple_f123bc675f0c699860fde9efcb75decc_tuple, 8, const_str_plain_arrmean ); Py_INCREF( const_str_plain_arrmean );
     PyTuple_SET_ITEM( const_tuple_f123bc675f0c699860fde9efcb75decc_tuple, 9, const_str_plain_x ); Py_INCREF( const_str_plain_x );
     PyTuple_SET_ITEM( const_tuple_f123bc675f0c699860fde9efcb75decc_tuple, 10, const_str_plain_ret ); Py_INCREF( const_str_plain_ret );
@@ -166,7 +166,7 @@ static void createModuleConstants( void )
     PyTuple_SET_ITEM( const_tuple_38378a805f8bc12d40dc19d611459d40_tuple, 4, const_str_plain_ddof ); Py_INCREF( const_str_plain_ddof );
     PyTuple_SET_ITEM( const_tuple_38378a805f8bc12d40dc19d611459d40_tuple, 5, const_str_plain_keepdims ); Py_INCREF( const_str_plain_keepdims );
     PyTuple_SET_ITEM( const_tuple_38378a805f8bc12d40dc19d611459d40_tuple, 6, const_str_plain_ret ); Py_INCREF( const_str_plain_ret );
-    const_str_plain_umr_any = UNSTREAM_STRING( &constant_bin[ 242645 ], 7, 1 );
+    const_str_plain_umr_any = UNSTREAM_STRING( &constant_bin[ 242581 ], 7, 1 );
     const_tuple_str_plain_arr_str_plain_axis_str_plain_items_str_plain_ax_tuple = PyTuple_New( 4 );
     PyTuple_SET_ITEM( const_tuple_str_plain_arr_str_plain_axis_str_plain_items_str_plain_ax_tuple, 0, const_str_plain_arr ); Py_INCREF( const_str_plain_arr );
     PyTuple_SET_ITEM( const_tuple_str_plain_arr_str_plain_axis_str_plain_items_str_plain_ax_tuple, 1, const_str_plain_axis ); Py_INCREF( const_str_plain_axis );
@@ -181,7 +181,7 @@ static void createModuleConstants( void )
     PyTuple_SET_ITEM( const_tuple_66f594c3091f46ff6f7e1f187f414503_tuple, 3, const_str_plain_out ); Py_INCREF( const_str_plain_out );
     PyTuple_SET_ITEM( const_tuple_66f594c3091f46ff6f7e1f187f414503_tuple, 4, const_str_plain_keepdims ); Py_INCREF( const_str_plain_keepdims );
     PyTuple_SET_ITEM( const_tuple_66f594c3091f46ff6f7e1f187f414503_tuple, 5, const_str_plain_arr ); Py_INCREF( const_str_plain_arr );
-    const_str_plain_is_float16_result = UNSTREAM_STRING( &constant_bin[ 242652 ], 17, 1 );
+    const_str_plain_is_float16_result = UNSTREAM_STRING( &constant_bin[ 242588 ], 17, 1 );
     PyTuple_SET_ITEM( const_tuple_66f594c3091f46ff6f7e1f187f414503_tuple, 6, const_str_plain_is_float16_result ); Py_INCREF( const_str_plain_is_float16_result );
     PyTuple_SET_ITEM( const_tuple_66f594c3091f46ff6f7e1f187f414503_tuple, 7, const_str_plain_rcount ); Py_INCREF( const_str_plain_rcount );
     PyTuple_SET_ITEM( const_tuple_66f594c3091f46ff6f7e1f187f414503_tuple, 8, const_str_plain_ret ); Py_INCREF( const_str_plain_ret );
@@ -190,16 +190,16 @@ static void createModuleConstants( void )
     PyTuple_SET_ITEM( const_tuple_str_plain_a_str_plain_axis_str_plain_out_str_plain_keepdims_tuple, 1, const_str_plain_axis ); Py_INCREF( const_str_plain_axis );
     PyTuple_SET_ITEM( const_tuple_str_plain_a_str_plain_axis_str_plain_out_str_plain_keepdims_tuple, 2, const_str_plain_out ); Py_INCREF( const_str_plain_out );
     PyTuple_SET_ITEM( const_tuple_str_plain_a_str_plain_axis_str_plain_out_str_plain_keepdims_tuple, 3, const_str_plain_keepdims ); Py_INCREF( const_str_plain_keepdims );
-    const_str_plain_f4 = UNSTREAM_STRING( &constant_bin[ 47439 ], 2, 1 );
-    const_str_plain_umr_all = UNSTREAM_STRING( &constant_bin[ 242669 ], 7, 1 );
+    const_str_plain_f4 = UNSTREAM_STRING( &constant_bin[ 47375 ], 2, 1 );
+    const_str_plain_umr_all = UNSTREAM_STRING( &constant_bin[ 242605 ], 7, 1 );
     const_tuple_str_plain_asanyarray_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_plain_asanyarray_tuple, 0, const_str_plain_asanyarray ); Py_INCREF( const_str_plain_asanyarray );
-    const_str_plain__all = UNSTREAM_STRING( &constant_bin[ 19969 ], 4, 1 );
-    const_str_plain__count_reduce_items = UNSTREAM_STRING( &constant_bin[ 242676 ], 19, 1 );
-    const_str_digest_c264d6c7c6a577cf11f1d443b80eb75b = UNSTREAM_STRING( &constant_bin[ 242601 ], 19, 0 );
+    const_str_plain__all = UNSTREAM_STRING( &constant_bin[ 19905 ], 4, 1 );
+    const_str_plain__count_reduce_items = UNSTREAM_STRING( &constant_bin[ 242612 ], 19, 1 );
+    const_str_digest_c264d6c7c6a577cf11f1d443b80eb75b = UNSTREAM_STRING( &constant_bin[ 242537 ], 19, 0 );
     const_tuple_str_plain_f4_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_plain_f4_tuple, 0, const_str_plain_f4 ); Py_INCREF( const_str_plain_f4 );
-    const_str_plain_umr_prod = UNSTREAM_STRING( &constant_bin[ 242695 ], 8, 1 );
+    const_str_plain_umr_prod = UNSTREAM_STRING( &constant_bin[ 242631 ], 8, 1 );
     const_tuple_none_none_none_int_0_false_tuple = PyTuple_New( 5 );
     PyTuple_SET_ITEM( const_tuple_none_none_none_int_0_false_tuple, 0, Py_None ); Py_INCREF( Py_None );
     PyTuple_SET_ITEM( const_tuple_none_none_none_int_0_false_tuple, 1, Py_None ); Py_INCREF( Py_None );
@@ -212,10 +212,10 @@ static void createModuleConstants( void )
     PyTuple_SET_ITEM( const_tuple_f8e4fbf288890cf7a024bae2e33cb1aa_tuple, 2, const_str_plain_dtype ); Py_INCREF( const_str_plain_dtype );
     PyTuple_SET_ITEM( const_tuple_f8e4fbf288890cf7a024bae2e33cb1aa_tuple, 3, const_str_plain_out ); Py_INCREF( const_str_plain_out );
     PyTuple_SET_ITEM( const_tuple_f8e4fbf288890cf7a024bae2e33cb1aa_tuple, 4, const_str_plain_keepdims ); Py_INCREF( const_str_plain_keepdims );
-    const_str_plain__any = UNSTREAM_STRING( &constant_bin[ 242648 ], 4, 1 );
-    const_str_plain_umr_maximum = UNSTREAM_STRING( &constant_bin[ 242703 ], 11, 1 );
-    const_str_digest_0eb7ee514b0cf98ac5f14749a356a892 = UNSTREAM_STRING( &constant_bin[ 242714 ], 20, 0 );
-    const_str_digest_afcfd11ee3df3c947f27eb372797c73c = UNSTREAM_STRING( &constant_bin[ 242734 ], 120, 0 );
+    const_str_plain__any = UNSTREAM_STRING( &constant_bin[ 242584 ], 4, 1 );
+    const_str_plain_umr_maximum = UNSTREAM_STRING( &constant_bin[ 242639 ], 11, 1 );
+    const_str_digest_0eb7ee514b0cf98ac5f14749a356a892 = UNSTREAM_STRING( &constant_bin[ 242650 ], 20, 0 );
+    const_str_digest_afcfd11ee3df3c947f27eb372797c73c = UNSTREAM_STRING( &constant_bin[ 242670 ], 120, 0 );
 
     constants_created = true;
 }

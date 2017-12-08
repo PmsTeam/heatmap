@@ -33,13 +33,13 @@ PyDictObject *moduledict___internal__;
 /* The module constants used, if any. */
 extern PyObject *const_str_plain_keys;
 extern PyObject *const_str_digest_25731c733fd74e8333aa29126ce85686;
-extern PyObject *const_int_0;
 extern PyObject *const_str_plain___internal__;
 extern PyObject *const_str_plain___name__;
 extern PyObject *const_str_digest_7bb187c562694df4ba2daaaf74308c83;
-extern PyObject *const_str_digest_6fe42bc7767704653d0465c04f34143d;
+extern PyObject *const_int_0;
 extern PyObject *const_str_digest_5cf0452130fc4fd9d925cac8f015f9d1;
 extern PyObject *const_str_plain_iteritems;
+extern PyObject *const_str_digest_adc474dd61fbd736d69c1bac5d9712e0;
 extern PyObject *const_int_pos_1;
 extern PyObject *const_str_digest_9816e8d1552296af90d250823c964059;
 extern PyObject *const_str_digest_45e4dde2057b0bf276d6a84f4c917d27;
@@ -73,19 +73,19 @@ static void createModuleCodeObjects(void)
 }
 
 // The module function declarations.
-NUITKA_CROSS_MODULE PyObject *impl___internal__$$$function_1_complex_call_helper_star_list( PyObject **python_pars );
+NUITKA_CROSS_MODULE PyObject *impl___internal__$$$function_1_complex_call_helper_star_list_star_dict( PyObject **python_pars );
 
 
 NUITKA_LOCAL_MODULE PyObject *impl___internal__$$$function_2_get_callable_name_desc( PyObject **python_pars );
 
 
-NUITKA_CROSS_MODULE PyObject *impl___internal__$$$function_3_complex_call_helper_star_list_star_dict( PyObject **python_pars );
+NUITKA_CROSS_MODULE PyObject *impl___internal__$$$function_3_complex_call_helper_pos_star_dict( PyObject **python_pars );
 
 
-NUITKA_CROSS_MODULE PyObject *impl___internal__$$$function_4_complex_call_helper_pos_star_dict( PyObject **python_pars );
+NUITKA_CROSS_MODULE PyObject *impl___internal__$$$function_4_complex_call_helper_pos_keywords_star_dict( PyObject **python_pars );
 
 
-NUITKA_CROSS_MODULE PyObject *impl___internal__$$$function_5_complex_call_helper_pos_keywords_star_dict( PyObject **python_pars );
+NUITKA_CROSS_MODULE PyObject *impl___internal__$$$function_5_complex_call_helper_star_list( PyObject **python_pars );
 
 
 NUITKA_CROSS_MODULE PyObject *impl___internal__$$$function_6_complex_call_helper_pos_star_list( PyObject **python_pars );
@@ -104,585 +104,7 @@ NUITKA_CROSS_MODULE PyObject *impl___internal__$$$function_11_complex_call_helpe
 
 
 // The module function definitions.
-NUITKA_CROSS_MODULE PyObject *impl___internal__$$$function_1_complex_call_helper_star_list( PyObject **python_pars )
-{
-#ifndef __NUITKA_NO_ASSERT__
-    NUITKA_MAY_BE_UNUSED bool had_error = ERROR_OCCURRED();
-    assert(!had_error); // Do not enter inlined functions with error set.
-#endif
-
-    // Local variable declarations.
-    PyObject *par_called = python_pars[ 0 ];
-    PyObject *par_star_arg_list = python_pars[ 1 ];
-    PyObject *exception_type = NULL;
-    PyObject *exception_value = NULL;
-    PyTracebackObject *exception_tb = NULL;
-    NUITKA_MAY_BE_UNUSED int exception_lineno = 0;
-    PyObject *exception_keeper_type_1;
-    PyObject *exception_keeper_value_1;
-    PyTracebackObject *exception_keeper_tb_1;
-    NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_1;
-    PyObject *exception_keeper_type_2;
-    PyObject *exception_keeper_value_2;
-    PyTracebackObject *exception_keeper_tb_2;
-    NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_2;
-    PyObject *tmp_args_name_1;
-    PyObject *tmp_assign_source_1;
-    PyObject *tmp_called_name_1;
-    PyObject *tmp_compare_left_1;
-    PyObject *tmp_compare_left_2;
-    PyObject *tmp_compare_right_1;
-    PyObject *tmp_compare_right_2;
-    PyObject *tmp_dircall_arg1_1;
-    int tmp_exc_match_exception_match_1;
-    bool tmp_isnot_1;
-    PyObject *tmp_left_name_1;
-    PyObject *tmp_make_exception_arg_1;
-    PyObject *tmp_raise_type_1;
-    PyObject *tmp_return_value;
-    PyObject *tmp_right_name_1;
-    PyObject *tmp_source_name_1;
-    PyObject *tmp_tuple_arg_1;
-    PyObject *tmp_tuple_element_1;
-    PyObject *tmp_type_arg_1;
-    PyObject *tmp_type_arg_2;
-    tmp_return_value = NULL;
-
-    // Actual function code.
-    // Tried code:
-    tmp_type_arg_1 = par_star_arg_list;
-
-    CHECK_OBJECT( tmp_type_arg_1 );
-    tmp_compare_left_1 = BUILTIN_TYPE1( tmp_type_arg_1 );
-    assert( tmp_compare_left_1 != NULL );
-    tmp_compare_right_1 = (PyObject *)&PyTuple_Type;
-    tmp_isnot_1 = ( tmp_compare_left_1 != tmp_compare_right_1 );
-    Py_DECREF( tmp_compare_left_1 );
-    if ( tmp_isnot_1 )
-    {
-        goto branch_yes_1;
-    }
-    else
-    {
-        goto branch_no_1;
-    }
-    branch_yes_1:;
-    // Tried code:
-    tmp_tuple_arg_1 = par_star_arg_list;
-
-    CHECK_OBJECT( tmp_tuple_arg_1 );
-    tmp_assign_source_1 = PySequence_Tuple( tmp_tuple_arg_1 );
-    if ( tmp_assign_source_1 == NULL )
-    {
-        assert( ERROR_OCCURRED() );
-
-        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-
-
-
-
-        goto try_except_handler_2;
-    }
-    {
-        PyObject *old = par_star_arg_list;
-        assert( old != NULL );
-        par_star_arg_list = tmp_assign_source_1;
-        Py_DECREF( old );
-    }
-
-    goto try_end_1;
-    // Exception handler code:
-    try_except_handler_2:;
-    exception_keeper_type_1 = exception_type;
-    exception_keeper_value_1 = exception_value;
-    exception_keeper_tb_1 = exception_tb;
-    exception_keeper_lineno_1 = exception_lineno;
-    exception_type = NULL;
-    exception_value = NULL;
-    exception_tb = NULL;
-    exception_lineno = 0;
-
-    tmp_compare_left_2 = exception_keeper_type_1;
-    tmp_compare_right_2 = PyExc_TypeError;
-    tmp_exc_match_exception_match_1 = EXCEPTION_MATCH_BOOL( tmp_compare_left_2, tmp_compare_right_2 );
-    if ( tmp_exc_match_exception_match_1 == -1 )
-    {
-        assert( ERROR_OCCURRED() );
-
-        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-
-        Py_DECREF( exception_keeper_type_1 );
-        Py_XDECREF( exception_keeper_value_1 );
-        Py_XDECREF( exception_keeper_tb_1 );
-
-
-
-        goto try_except_handler_1;
-    }
-    if ( tmp_exc_match_exception_match_1 == 1 )
-    {
-        goto branch_yes_2;
-    }
-    else
-    {
-        goto branch_no_2;
-    }
-    branch_yes_2:;
-    tmp_left_name_1 = const_str_digest_6fe42bc7767704653d0465c04f34143d;
-    tmp_right_name_1 = PyTuple_New( 2 );
-    tmp_dircall_arg1_1 = par_called;
-
-    CHECK_OBJECT( tmp_dircall_arg1_1 );
-    Py_INCREF( tmp_dircall_arg1_1 );
-
-    {
-        PyObject *dir_call_args[] = {tmp_dircall_arg1_1};
-        tmp_tuple_element_1 = impl___internal__$$$function_2_get_callable_name_desc( dir_call_args );
-    }
-    if ( tmp_tuple_element_1 == NULL )
-    {
-        assert( ERROR_OCCURRED() );
-
-        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-        Py_DECREF( tmp_right_name_1 );
-        Py_DECREF( exception_keeper_type_1 );
-        Py_XDECREF( exception_keeper_value_1 );
-        Py_XDECREF( exception_keeper_tb_1 );
-
-
-
-        goto try_except_handler_1;
-    }
-    PyTuple_SET_ITEM( tmp_right_name_1, 0, tmp_tuple_element_1 );
-    tmp_type_arg_2 = par_star_arg_list;
-
-    CHECK_OBJECT( tmp_type_arg_2 );
-    tmp_source_name_1 = BUILTIN_TYPE1( tmp_type_arg_2 );
-    assert( tmp_source_name_1 != NULL );
-    tmp_tuple_element_1 = LOOKUP_ATTRIBUTE( tmp_source_name_1, const_str_plain___name__ );
-    Py_DECREF( tmp_source_name_1 );
-    if ( tmp_tuple_element_1 == NULL )
-    {
-        assert( ERROR_OCCURRED() );
-
-        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-        Py_DECREF( tmp_right_name_1 );
-        Py_DECREF( exception_keeper_type_1 );
-        Py_XDECREF( exception_keeper_value_1 );
-        Py_XDECREF( exception_keeper_tb_1 );
-
-
-
-        goto try_except_handler_1;
-    }
-    PyTuple_SET_ITEM( tmp_right_name_1, 1, tmp_tuple_element_1 );
-    tmp_make_exception_arg_1 = BINARY_OPERATION_REMAINDER( tmp_left_name_1, tmp_right_name_1 );
-    Py_DECREF( tmp_right_name_1 );
-    if ( tmp_make_exception_arg_1 == NULL )
-    {
-        assert( ERROR_OCCURRED() );
-
-        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-
-        Py_DECREF( exception_keeper_type_1 );
-        Py_XDECREF( exception_keeper_value_1 );
-        Py_XDECREF( exception_keeper_tb_1 );
-
-
-
-        goto try_except_handler_1;
-    }
-    {
-        PyObject *call_args[] = { tmp_make_exception_arg_1 };
-        tmp_raise_type_1 = CALL_FUNCTION_WITH_ARGS1( PyExc_TypeError, call_args );
-    }
-
-    Py_DECREF( tmp_make_exception_arg_1 );
-    assert( tmp_raise_type_1 != NULL );
-    exception_type = tmp_raise_type_1;
-    RAISE_EXCEPTION_WITH_TYPE( &exception_type, &exception_value, &exception_tb );
-
-    goto try_except_handler_1;
-    goto branch_end_2;
-    branch_no_2:;
-    // Re-raise.
-    exception_type = exception_keeper_type_1;
-    exception_value = exception_keeper_value_1;
-    exception_tb = exception_keeper_tb_1;
-    exception_lineno = exception_keeper_lineno_1;
-
-    goto try_except_handler_1;
-    branch_end_2:;
-    // End of try:
-    try_end_1:;
-    branch_no_1:;
-    tmp_called_name_1 = par_called;
-
-    CHECK_OBJECT( tmp_called_name_1 );
-    tmp_args_name_1 = par_star_arg_list;
-
-    CHECK_OBJECT( tmp_args_name_1 );
-    tmp_return_value = CALL_FUNCTION_WITH_POSARGS( tmp_called_name_1, tmp_args_name_1 );
-    if ( tmp_return_value == NULL )
-    {
-        assert( ERROR_OCCURRED() );
-
-        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-
-
-
-
-        goto try_except_handler_1;
-    }
-    goto try_return_handler_1;
-    // tried codes exits in all cases
-    NUITKA_CANNOT_GET_HERE( __internal__$$$function_1_complex_call_helper_star_list );
-    return NULL;
-    // Return handler code:
-    try_return_handler_1:;
-    CHECK_OBJECT( (PyObject *)par_called );
-    Py_DECREF( par_called );
-    par_called = NULL;
-
-    CHECK_OBJECT( (PyObject *)par_star_arg_list );
-    Py_DECREF( par_star_arg_list );
-    par_star_arg_list = NULL;
-
-    goto function_return_exit;
-    // Exception handler code:
-    try_except_handler_1:;
-    exception_keeper_type_2 = exception_type;
-    exception_keeper_value_2 = exception_value;
-    exception_keeper_tb_2 = exception_tb;
-    exception_keeper_lineno_2 = exception_lineno;
-    exception_type = NULL;
-    exception_value = NULL;
-    exception_tb = NULL;
-    exception_lineno = 0;
-
-    CHECK_OBJECT( (PyObject *)par_called );
-    Py_DECREF( par_called );
-    par_called = NULL;
-
-    Py_XDECREF( par_star_arg_list );
-    par_star_arg_list = NULL;
-
-    // Re-raise.
-    exception_type = exception_keeper_type_2;
-    exception_value = exception_keeper_value_2;
-    exception_tb = exception_keeper_tb_2;
-    exception_lineno = exception_keeper_lineno_2;
-
-    goto function_exception_exit;
-    // End of try:
-
-    // Return statement must have exited already.
-    NUITKA_CANNOT_GET_HERE( __internal__$$$function_1_complex_call_helper_star_list );
-    return NULL;
-
-function_exception_exit:
-    assert( exception_type );
-    RESTORE_ERROR_OCCURRED( exception_type, exception_value, exception_tb );
-
-    return NULL;
-    function_return_exit:
-
-    CHECK_OBJECT( tmp_return_value );
-    assert( had_error || !ERROR_OCCURRED() );
-    return tmp_return_value;
-
-}
-
-
-NUITKA_LOCAL_MODULE PyObject *impl___internal__$$$function_2_get_callable_name_desc( PyObject **python_pars )
-{
-#ifndef __NUITKA_NO_ASSERT__
-    NUITKA_MAY_BE_UNUSED bool had_error = ERROR_OCCURRED();
-    assert(!had_error); // Do not enter inlined functions with error set.
-#endif
-
-    // Local variable declarations.
-    PyObject *par_called = python_pars[ 0 ];
-    PyObject *exception_type = NULL;
-    PyObject *exception_value = NULL;
-    PyTracebackObject *exception_tb = NULL;
-    NUITKA_MAY_BE_UNUSED int exception_lineno = 0;
-    PyObject *tmp_isinstance_cls_1;
-    PyObject *tmp_isinstance_cls_2;
-    PyObject *tmp_isinstance_cls_3;
-    PyObject *tmp_isinstance_inst_1;
-    PyObject *tmp_isinstance_inst_2;
-    PyObject *tmp_isinstance_inst_3;
-    PyObject *tmp_left_name_1;
-    PyObject *tmp_left_name_2;
-    PyObject *tmp_left_name_3;
-    PyObject *tmp_left_name_4;
-    int tmp_res;
-    PyObject *tmp_return_value;
-    PyObject *tmp_right_name_1;
-    PyObject *tmp_right_name_2;
-    PyObject *tmp_right_name_3;
-    PyObject *tmp_right_name_4;
-    PyObject *tmp_source_name_1;
-    PyObject *tmp_source_name_2;
-    PyObject *tmp_source_name_3;
-    PyObject *tmp_source_name_4;
-    PyObject *tmp_source_name_5;
-    PyObject *tmp_tuple_element_1;
-    PyObject *tmp_type_arg_1;
-    tmp_return_value = NULL;
-
-    // Actual function code.
-    tmp_isinstance_inst_1 = par_called;
-
-    CHECK_OBJECT( tmp_isinstance_inst_1 );
-    tmp_isinstance_cls_1 = PyTuple_New( 3 );
-    tmp_tuple_element_1 = (PyObject *)&PyFunction_Type;
-    Py_INCREF( tmp_tuple_element_1 );
-    PyTuple_SET_ITEM( tmp_isinstance_cls_1, 0, tmp_tuple_element_1 );
-    tmp_tuple_element_1 = (PyObject *)&PyCFunction_Type;
-    Py_INCREF( tmp_tuple_element_1 );
-    PyTuple_SET_ITEM( tmp_isinstance_cls_1, 1, tmp_tuple_element_1 );
-    tmp_tuple_element_1 = (PyObject *)&PyMethod_Type;
-    Py_INCREF( tmp_tuple_element_1 );
-    PyTuple_SET_ITEM( tmp_isinstance_cls_1, 2, tmp_tuple_element_1 );
-    tmp_res = Nuitka_IsInstance( tmp_isinstance_inst_1, tmp_isinstance_cls_1 );
-    Py_DECREF( tmp_isinstance_cls_1 );
-    if ( tmp_res == -1 )
-    {
-        assert( ERROR_OCCURRED() );
-
-        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-
-
-
-
-        goto function_exception_exit;
-    }
-    if ( tmp_res == 1 )
-    {
-        goto branch_yes_1;
-    }
-    else
-    {
-        goto branch_no_1;
-    }
-    branch_yes_1:;
-    tmp_source_name_1 = par_called;
-
-    CHECK_OBJECT( tmp_source_name_1 );
-    tmp_left_name_1 = LOOKUP_ATTRIBUTE( tmp_source_name_1, const_str_plain___name__ );
-    if ( tmp_left_name_1 == NULL )
-    {
-        assert( ERROR_OCCURRED() );
-
-        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-
-
-
-
-        goto function_exception_exit;
-    }
-    tmp_right_name_1 = const_str_digest_25731c733fd74e8333aa29126ce85686;
-    tmp_return_value = BINARY_OPERATION_ADD( tmp_left_name_1, tmp_right_name_1 );
-    Py_DECREF( tmp_left_name_1 );
-    if ( tmp_return_value == NULL )
-    {
-        assert( ERROR_OCCURRED() );
-
-        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-
-
-
-
-        goto function_exception_exit;
-    }
-    goto function_return_exit;
-    goto branch_end_1;
-    branch_no_1:;
-    tmp_isinstance_inst_2 = par_called;
-
-    CHECK_OBJECT( tmp_isinstance_inst_2 );
-    tmp_isinstance_cls_2 = (PyObject *)&PyClass_Type;
-    tmp_res = Nuitka_IsInstance( tmp_isinstance_inst_2, tmp_isinstance_cls_2 );
-    if ( tmp_res == -1 )
-    {
-        assert( ERROR_OCCURRED() );
-
-        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-
-
-
-
-        goto function_exception_exit;
-    }
-    if ( tmp_res == 1 )
-    {
-        goto branch_yes_2;
-    }
-    else
-    {
-        goto branch_no_2;
-    }
-    branch_yes_2:;
-    tmp_source_name_2 = par_called;
-
-    CHECK_OBJECT( tmp_source_name_2 );
-    tmp_left_name_2 = LOOKUP_ATTRIBUTE( tmp_source_name_2, const_str_plain___name__ );
-    if ( tmp_left_name_2 == NULL )
-    {
-        assert( ERROR_OCCURRED() );
-
-        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-
-
-
-
-        goto function_exception_exit;
-    }
-    tmp_right_name_2 = const_str_digest_5cf0452130fc4fd9d925cac8f015f9d1;
-    tmp_return_value = BINARY_OPERATION_ADD( tmp_left_name_2, tmp_right_name_2 );
-    Py_DECREF( tmp_left_name_2 );
-    if ( tmp_return_value == NULL )
-    {
-        assert( ERROR_OCCURRED() );
-
-        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-
-
-
-
-        goto function_exception_exit;
-    }
-    goto function_return_exit;
-    goto branch_end_2;
-    branch_no_2:;
-    tmp_isinstance_inst_3 = par_called;
-
-    CHECK_OBJECT( tmp_isinstance_inst_3 );
-    tmp_isinstance_cls_3 = (PyObject *)&PyInstance_Type;
-    tmp_res = Nuitka_IsInstance( tmp_isinstance_inst_3, tmp_isinstance_cls_3 );
-    if ( tmp_res == -1 )
-    {
-        assert( ERROR_OCCURRED() );
-
-        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-
-
-
-
-        goto function_exception_exit;
-    }
-    if ( tmp_res == 1 )
-    {
-        goto branch_yes_3;
-    }
-    else
-    {
-        goto branch_no_3;
-    }
-    branch_yes_3:;
-    tmp_source_name_4 = par_called;
-
-    CHECK_OBJECT( tmp_source_name_4 );
-    tmp_source_name_3 = LOOKUP_ATTRIBUTE_CLASS_SLOT( tmp_source_name_4 );
-    if ( tmp_source_name_3 == NULL )
-    {
-        assert( ERROR_OCCURRED() );
-
-        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-
-
-
-
-        goto function_exception_exit;
-    }
-    tmp_left_name_3 = LOOKUP_ATTRIBUTE( tmp_source_name_3, const_str_plain___name__ );
-    Py_DECREF( tmp_source_name_3 );
-    if ( tmp_left_name_3 == NULL )
-    {
-        assert( ERROR_OCCURRED() );
-
-        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-
-
-
-
-        goto function_exception_exit;
-    }
-    tmp_right_name_3 = const_str_digest_7bb187c562694df4ba2daaaf74308c83;
-    tmp_return_value = BINARY_OPERATION_ADD( tmp_left_name_3, tmp_right_name_3 );
-    Py_DECREF( tmp_left_name_3 );
-    if ( tmp_return_value == NULL )
-    {
-        assert( ERROR_OCCURRED() );
-
-        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-
-
-
-
-        goto function_exception_exit;
-    }
-    goto function_return_exit;
-    goto branch_end_3;
-    branch_no_3:;
-    tmp_type_arg_1 = par_called;
-
-    CHECK_OBJECT( tmp_type_arg_1 );
-    tmp_source_name_5 = BUILTIN_TYPE1( tmp_type_arg_1 );
-    assert( tmp_source_name_5 != NULL );
-    tmp_left_name_4 = LOOKUP_ATTRIBUTE( tmp_source_name_5, const_str_plain___name__ );
-    Py_DECREF( tmp_source_name_5 );
-    if ( tmp_left_name_4 == NULL )
-    {
-        assert( ERROR_OCCURRED() );
-
-        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-
-
-
-
-        goto function_exception_exit;
-    }
-    tmp_right_name_4 = const_str_digest_45e4dde2057b0bf276d6a84f4c917d27;
-    tmp_return_value = BINARY_OPERATION_ADD( tmp_left_name_4, tmp_right_name_4 );
-    Py_DECREF( tmp_left_name_4 );
-    if ( tmp_return_value == NULL )
-    {
-        assert( ERROR_OCCURRED() );
-
-        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-
-
-
-
-        goto function_exception_exit;
-    }
-    goto function_return_exit;
-    branch_end_3:;
-    branch_end_2:;
-    branch_end_1:;
-
-    // Return statement must have exited already.
-    NUITKA_CANNOT_GET_HERE( __internal__$$$function_2_get_callable_name_desc );
-    return NULL;
-
-function_exception_exit:
-    assert( exception_type );
-    RESTORE_ERROR_OCCURRED( exception_type, exception_value, exception_tb );
-
-    return NULL;
-    function_return_exit:
-
-    CHECK_OBJECT( tmp_return_value );
-    assert( had_error || !ERROR_OCCURRED() );
-    return tmp_return_value;
-
-}
-
-
-NUITKA_CROSS_MODULE PyObject *impl___internal__$$$function_3_complex_call_helper_star_list_star_dict( PyObject **python_pars )
+NUITKA_CROSS_MODULE PyObject *impl___internal__$$$function_1_complex_call_helper_star_list_star_dict( PyObject **python_pars )
 {
 #ifndef __NUITKA_NO_ASSERT__
     NUITKA_MAY_BE_UNUSED bool had_error = ERROR_OCCURRED();
@@ -1168,7 +590,7 @@ NUITKA_CROSS_MODULE PyObject *impl___internal__$$$function_3_complex_call_helper
         goto branch_no_4;
     }
     branch_yes_4:;
-    tmp_left_name_2 = const_str_digest_6fe42bc7767704653d0465c04f34143d;
+    tmp_left_name_2 = const_str_digest_adc474dd61fbd736d69c1bac5d9712e0;
     tmp_right_name_2 = PyTuple_New( 2 );
     tmp_dircall_arg1_2 = par_called;
 
@@ -1279,7 +701,7 @@ NUITKA_CROSS_MODULE PyObject *impl___internal__$$$function_3_complex_call_helper
     }
     goto try_return_handler_1;
     // tried codes exits in all cases
-    NUITKA_CANNOT_GET_HERE( __internal__$$$function_3_complex_call_helper_star_list_star_dict );
+    NUITKA_CANNOT_GET_HERE( __internal__$$$function_1_complex_call_helper_star_list_star_dict );
     return NULL;
     // Return handler code:
     try_return_handler_1:;
@@ -1327,7 +749,7 @@ NUITKA_CROSS_MODULE PyObject *impl___internal__$$$function_3_complex_call_helper
     // End of try:
 
     // Return statement must have exited already.
-    NUITKA_CANNOT_GET_HERE( __internal__$$$function_3_complex_call_helper_star_list_star_dict );
+    NUITKA_CANNOT_GET_HERE( __internal__$$$function_1_complex_call_helper_star_list_star_dict );
     return NULL;
 
 function_exception_exit:
@@ -1344,7 +766,295 @@ function_exception_exit:
 }
 
 
-NUITKA_CROSS_MODULE PyObject *impl___internal__$$$function_4_complex_call_helper_pos_star_dict( PyObject **python_pars )
+NUITKA_LOCAL_MODULE PyObject *impl___internal__$$$function_2_get_callable_name_desc( PyObject **python_pars )
+{
+#ifndef __NUITKA_NO_ASSERT__
+    NUITKA_MAY_BE_UNUSED bool had_error = ERROR_OCCURRED();
+    assert(!had_error); // Do not enter inlined functions with error set.
+#endif
+
+    // Local variable declarations.
+    PyObject *par_called = python_pars[ 0 ];
+    PyObject *exception_type = NULL;
+    PyObject *exception_value = NULL;
+    PyTracebackObject *exception_tb = NULL;
+    NUITKA_MAY_BE_UNUSED int exception_lineno = 0;
+    PyObject *tmp_isinstance_cls_1;
+    PyObject *tmp_isinstance_cls_2;
+    PyObject *tmp_isinstance_cls_3;
+    PyObject *tmp_isinstance_inst_1;
+    PyObject *tmp_isinstance_inst_2;
+    PyObject *tmp_isinstance_inst_3;
+    PyObject *tmp_left_name_1;
+    PyObject *tmp_left_name_2;
+    PyObject *tmp_left_name_3;
+    PyObject *tmp_left_name_4;
+    int tmp_res;
+    PyObject *tmp_return_value;
+    PyObject *tmp_right_name_1;
+    PyObject *tmp_right_name_2;
+    PyObject *tmp_right_name_3;
+    PyObject *tmp_right_name_4;
+    PyObject *tmp_source_name_1;
+    PyObject *tmp_source_name_2;
+    PyObject *tmp_source_name_3;
+    PyObject *tmp_source_name_4;
+    PyObject *tmp_source_name_5;
+    PyObject *tmp_tuple_element_1;
+    PyObject *tmp_type_arg_1;
+    tmp_return_value = NULL;
+
+    // Actual function code.
+    tmp_isinstance_inst_1 = par_called;
+
+    CHECK_OBJECT( tmp_isinstance_inst_1 );
+    tmp_isinstance_cls_1 = PyTuple_New( 3 );
+    tmp_tuple_element_1 = (PyObject *)&PyFunction_Type;
+    Py_INCREF( tmp_tuple_element_1 );
+    PyTuple_SET_ITEM( tmp_isinstance_cls_1, 0, tmp_tuple_element_1 );
+    tmp_tuple_element_1 = (PyObject *)&PyCFunction_Type;
+    Py_INCREF( tmp_tuple_element_1 );
+    PyTuple_SET_ITEM( tmp_isinstance_cls_1, 1, tmp_tuple_element_1 );
+    tmp_tuple_element_1 = (PyObject *)&PyMethod_Type;
+    Py_INCREF( tmp_tuple_element_1 );
+    PyTuple_SET_ITEM( tmp_isinstance_cls_1, 2, tmp_tuple_element_1 );
+    tmp_res = Nuitka_IsInstance( tmp_isinstance_inst_1, tmp_isinstance_cls_1 );
+    Py_DECREF( tmp_isinstance_cls_1 );
+    if ( tmp_res == -1 )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+
+
+        goto function_exception_exit;
+    }
+    if ( tmp_res == 1 )
+    {
+        goto branch_yes_1;
+    }
+    else
+    {
+        goto branch_no_1;
+    }
+    branch_yes_1:;
+    tmp_source_name_1 = par_called;
+
+    CHECK_OBJECT( tmp_source_name_1 );
+    tmp_left_name_1 = LOOKUP_ATTRIBUTE( tmp_source_name_1, const_str_plain___name__ );
+    if ( tmp_left_name_1 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+
+
+        goto function_exception_exit;
+    }
+    tmp_right_name_1 = const_str_digest_25731c733fd74e8333aa29126ce85686;
+    tmp_return_value = BINARY_OPERATION_ADD( tmp_left_name_1, tmp_right_name_1 );
+    Py_DECREF( tmp_left_name_1 );
+    if ( tmp_return_value == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+
+
+        goto function_exception_exit;
+    }
+    goto function_return_exit;
+    goto branch_end_1;
+    branch_no_1:;
+    tmp_isinstance_inst_2 = par_called;
+
+    CHECK_OBJECT( tmp_isinstance_inst_2 );
+    tmp_isinstance_cls_2 = (PyObject *)&PyClass_Type;
+    tmp_res = Nuitka_IsInstance( tmp_isinstance_inst_2, tmp_isinstance_cls_2 );
+    if ( tmp_res == -1 )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+
+
+        goto function_exception_exit;
+    }
+    if ( tmp_res == 1 )
+    {
+        goto branch_yes_2;
+    }
+    else
+    {
+        goto branch_no_2;
+    }
+    branch_yes_2:;
+    tmp_source_name_2 = par_called;
+
+    CHECK_OBJECT( tmp_source_name_2 );
+    tmp_left_name_2 = LOOKUP_ATTRIBUTE( tmp_source_name_2, const_str_plain___name__ );
+    if ( tmp_left_name_2 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+
+
+        goto function_exception_exit;
+    }
+    tmp_right_name_2 = const_str_digest_5cf0452130fc4fd9d925cac8f015f9d1;
+    tmp_return_value = BINARY_OPERATION_ADD( tmp_left_name_2, tmp_right_name_2 );
+    Py_DECREF( tmp_left_name_2 );
+    if ( tmp_return_value == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+
+
+        goto function_exception_exit;
+    }
+    goto function_return_exit;
+    goto branch_end_2;
+    branch_no_2:;
+    tmp_isinstance_inst_3 = par_called;
+
+    CHECK_OBJECT( tmp_isinstance_inst_3 );
+    tmp_isinstance_cls_3 = (PyObject *)&PyInstance_Type;
+    tmp_res = Nuitka_IsInstance( tmp_isinstance_inst_3, tmp_isinstance_cls_3 );
+    if ( tmp_res == -1 )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+
+
+        goto function_exception_exit;
+    }
+    if ( tmp_res == 1 )
+    {
+        goto branch_yes_3;
+    }
+    else
+    {
+        goto branch_no_3;
+    }
+    branch_yes_3:;
+    tmp_source_name_4 = par_called;
+
+    CHECK_OBJECT( tmp_source_name_4 );
+    tmp_source_name_3 = LOOKUP_ATTRIBUTE_CLASS_SLOT( tmp_source_name_4 );
+    if ( tmp_source_name_3 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+
+
+        goto function_exception_exit;
+    }
+    tmp_left_name_3 = LOOKUP_ATTRIBUTE( tmp_source_name_3, const_str_plain___name__ );
+    Py_DECREF( tmp_source_name_3 );
+    if ( tmp_left_name_3 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+
+
+        goto function_exception_exit;
+    }
+    tmp_right_name_3 = const_str_digest_7bb187c562694df4ba2daaaf74308c83;
+    tmp_return_value = BINARY_OPERATION_ADD( tmp_left_name_3, tmp_right_name_3 );
+    Py_DECREF( tmp_left_name_3 );
+    if ( tmp_return_value == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+
+
+        goto function_exception_exit;
+    }
+    goto function_return_exit;
+    goto branch_end_3;
+    branch_no_3:;
+    tmp_type_arg_1 = par_called;
+
+    CHECK_OBJECT( tmp_type_arg_1 );
+    tmp_source_name_5 = BUILTIN_TYPE1( tmp_type_arg_1 );
+    assert( tmp_source_name_5 != NULL );
+    tmp_left_name_4 = LOOKUP_ATTRIBUTE( tmp_source_name_5, const_str_plain___name__ );
+    Py_DECREF( tmp_source_name_5 );
+    if ( tmp_left_name_4 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+
+
+        goto function_exception_exit;
+    }
+    tmp_right_name_4 = const_str_digest_45e4dde2057b0bf276d6a84f4c917d27;
+    tmp_return_value = BINARY_OPERATION_ADD( tmp_left_name_4, tmp_right_name_4 );
+    Py_DECREF( tmp_left_name_4 );
+    if ( tmp_return_value == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+
+
+        goto function_exception_exit;
+    }
+    goto function_return_exit;
+    branch_end_3:;
+    branch_end_2:;
+    branch_end_1:;
+
+    // Return statement must have exited already.
+    NUITKA_CANNOT_GET_HERE( __internal__$$$function_2_get_callable_name_desc );
+    return NULL;
+
+function_exception_exit:
+    assert( exception_type );
+    RESTORE_ERROR_OCCURRED( exception_type, exception_value, exception_tb );
+
+    return NULL;
+    function_return_exit:
+
+    CHECK_OBJECT( tmp_return_value );
+    assert( had_error || !ERROR_OCCURRED() );
+    return tmp_return_value;
+
+}
+
+
+NUITKA_CROSS_MODULE PyObject *impl___internal__$$$function_3_complex_call_helper_pos_star_dict( PyObject **python_pars )
 {
 #ifndef __NUITKA_NO_ASSERT__
     NUITKA_MAY_BE_UNUSED bool had_error = ERROR_OCCURRED();
@@ -1754,7 +1464,7 @@ NUITKA_CROSS_MODULE PyObject *impl___internal__$$$function_4_complex_call_helper
     }
     goto try_return_handler_1;
     // tried codes exits in all cases
-    NUITKA_CANNOT_GET_HERE( __internal__$$$function_4_complex_call_helper_pos_star_dict );
+    NUITKA_CANNOT_GET_HERE( __internal__$$$function_3_complex_call_helper_pos_star_dict );
     return NULL;
     // Return handler code:
     try_return_handler_1:;
@@ -1803,7 +1513,7 @@ NUITKA_CROSS_MODULE PyObject *impl___internal__$$$function_4_complex_call_helper
     // End of try:
 
     // Return statement must have exited already.
-    NUITKA_CANNOT_GET_HERE( __internal__$$$function_4_complex_call_helper_pos_star_dict );
+    NUITKA_CANNOT_GET_HERE( __internal__$$$function_3_complex_call_helper_pos_star_dict );
     return NULL;
 
 function_exception_exit:
@@ -1820,7 +1530,7 @@ function_exception_exit:
 }
 
 
-NUITKA_CROSS_MODULE PyObject *impl___internal__$$$function_5_complex_call_helper_pos_keywords_star_dict( PyObject **python_pars )
+NUITKA_CROSS_MODULE PyObject *impl___internal__$$$function_4_complex_call_helper_pos_keywords_star_dict( PyObject **python_pars )
 {
 #ifndef __NUITKA_NO_ASSERT__
     NUITKA_MAY_BE_UNUSED bool had_error = ERROR_OCCURRED();
@@ -2630,7 +2340,7 @@ NUITKA_CROSS_MODULE PyObject *impl___internal__$$$function_5_complex_call_helper
     }
     goto try_return_handler_1;
     // tried codes exits in all cases
-    NUITKA_CANNOT_GET_HERE( __internal__$$$function_5_complex_call_helper_pos_keywords_star_dict );
+    NUITKA_CANNOT_GET_HERE( __internal__$$$function_4_complex_call_helper_pos_keywords_star_dict );
     return NULL;
     // Return handler code:
     try_return_handler_1:;
@@ -2686,7 +2396,297 @@ NUITKA_CROSS_MODULE PyObject *impl___internal__$$$function_5_complex_call_helper
     // End of try:
 
     // Return statement must have exited already.
-    NUITKA_CANNOT_GET_HERE( __internal__$$$function_5_complex_call_helper_pos_keywords_star_dict );
+    NUITKA_CANNOT_GET_HERE( __internal__$$$function_4_complex_call_helper_pos_keywords_star_dict );
+    return NULL;
+
+function_exception_exit:
+    assert( exception_type );
+    RESTORE_ERROR_OCCURRED( exception_type, exception_value, exception_tb );
+
+    return NULL;
+    function_return_exit:
+
+    CHECK_OBJECT( tmp_return_value );
+    assert( had_error || !ERROR_OCCURRED() );
+    return tmp_return_value;
+
+}
+
+
+NUITKA_CROSS_MODULE PyObject *impl___internal__$$$function_5_complex_call_helper_star_list( PyObject **python_pars )
+{
+#ifndef __NUITKA_NO_ASSERT__
+    NUITKA_MAY_BE_UNUSED bool had_error = ERROR_OCCURRED();
+    assert(!had_error); // Do not enter inlined functions with error set.
+#endif
+
+    // Local variable declarations.
+    PyObject *par_called = python_pars[ 0 ];
+    PyObject *par_star_arg_list = python_pars[ 1 ];
+    PyObject *exception_type = NULL;
+    PyObject *exception_value = NULL;
+    PyTracebackObject *exception_tb = NULL;
+    NUITKA_MAY_BE_UNUSED int exception_lineno = 0;
+    PyObject *exception_keeper_type_1;
+    PyObject *exception_keeper_value_1;
+    PyTracebackObject *exception_keeper_tb_1;
+    NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_1;
+    PyObject *exception_keeper_type_2;
+    PyObject *exception_keeper_value_2;
+    PyTracebackObject *exception_keeper_tb_2;
+    NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_2;
+    PyObject *tmp_args_name_1;
+    PyObject *tmp_assign_source_1;
+    PyObject *tmp_called_name_1;
+    PyObject *tmp_compare_left_1;
+    PyObject *tmp_compare_left_2;
+    PyObject *tmp_compare_right_1;
+    PyObject *tmp_compare_right_2;
+    PyObject *tmp_dircall_arg1_1;
+    int tmp_exc_match_exception_match_1;
+    bool tmp_isnot_1;
+    PyObject *tmp_left_name_1;
+    PyObject *tmp_make_exception_arg_1;
+    PyObject *tmp_raise_type_1;
+    PyObject *tmp_return_value;
+    PyObject *tmp_right_name_1;
+    PyObject *tmp_source_name_1;
+    PyObject *tmp_tuple_arg_1;
+    PyObject *tmp_tuple_element_1;
+    PyObject *tmp_type_arg_1;
+    PyObject *tmp_type_arg_2;
+    tmp_return_value = NULL;
+
+    // Actual function code.
+    // Tried code:
+    tmp_type_arg_1 = par_star_arg_list;
+
+    CHECK_OBJECT( tmp_type_arg_1 );
+    tmp_compare_left_1 = BUILTIN_TYPE1( tmp_type_arg_1 );
+    assert( tmp_compare_left_1 != NULL );
+    tmp_compare_right_1 = (PyObject *)&PyTuple_Type;
+    tmp_isnot_1 = ( tmp_compare_left_1 != tmp_compare_right_1 );
+    Py_DECREF( tmp_compare_left_1 );
+    if ( tmp_isnot_1 )
+    {
+        goto branch_yes_1;
+    }
+    else
+    {
+        goto branch_no_1;
+    }
+    branch_yes_1:;
+    // Tried code:
+    tmp_tuple_arg_1 = par_star_arg_list;
+
+    CHECK_OBJECT( tmp_tuple_arg_1 );
+    tmp_assign_source_1 = PySequence_Tuple( tmp_tuple_arg_1 );
+    if ( tmp_assign_source_1 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+
+
+        goto try_except_handler_2;
+    }
+    {
+        PyObject *old = par_star_arg_list;
+        assert( old != NULL );
+        par_star_arg_list = tmp_assign_source_1;
+        Py_DECREF( old );
+    }
+
+    goto try_end_1;
+    // Exception handler code:
+    try_except_handler_2:;
+    exception_keeper_type_1 = exception_type;
+    exception_keeper_value_1 = exception_value;
+    exception_keeper_tb_1 = exception_tb;
+    exception_keeper_lineno_1 = exception_lineno;
+    exception_type = NULL;
+    exception_value = NULL;
+    exception_tb = NULL;
+    exception_lineno = 0;
+
+    tmp_compare_left_2 = exception_keeper_type_1;
+    tmp_compare_right_2 = PyExc_TypeError;
+    tmp_exc_match_exception_match_1 = EXCEPTION_MATCH_BOOL( tmp_compare_left_2, tmp_compare_right_2 );
+    if ( tmp_exc_match_exception_match_1 == -1 )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+        Py_DECREF( exception_keeper_type_1 );
+        Py_XDECREF( exception_keeper_value_1 );
+        Py_XDECREF( exception_keeper_tb_1 );
+
+
+
+        goto try_except_handler_1;
+    }
+    if ( tmp_exc_match_exception_match_1 == 1 )
+    {
+        goto branch_yes_2;
+    }
+    else
+    {
+        goto branch_no_2;
+    }
+    branch_yes_2:;
+    tmp_left_name_1 = const_str_digest_adc474dd61fbd736d69c1bac5d9712e0;
+    tmp_right_name_1 = PyTuple_New( 2 );
+    tmp_dircall_arg1_1 = par_called;
+
+    CHECK_OBJECT( tmp_dircall_arg1_1 );
+    Py_INCREF( tmp_dircall_arg1_1 );
+
+    {
+        PyObject *dir_call_args[] = {tmp_dircall_arg1_1};
+        tmp_tuple_element_1 = impl___internal__$$$function_2_get_callable_name_desc( dir_call_args );
+    }
+    if ( tmp_tuple_element_1 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+        Py_DECREF( tmp_right_name_1 );
+        Py_DECREF( exception_keeper_type_1 );
+        Py_XDECREF( exception_keeper_value_1 );
+        Py_XDECREF( exception_keeper_tb_1 );
+
+
+
+        goto try_except_handler_1;
+    }
+    PyTuple_SET_ITEM( tmp_right_name_1, 0, tmp_tuple_element_1 );
+    tmp_type_arg_2 = par_star_arg_list;
+
+    CHECK_OBJECT( tmp_type_arg_2 );
+    tmp_source_name_1 = BUILTIN_TYPE1( tmp_type_arg_2 );
+    assert( tmp_source_name_1 != NULL );
+    tmp_tuple_element_1 = LOOKUP_ATTRIBUTE( tmp_source_name_1, const_str_plain___name__ );
+    Py_DECREF( tmp_source_name_1 );
+    if ( tmp_tuple_element_1 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+        Py_DECREF( tmp_right_name_1 );
+        Py_DECREF( exception_keeper_type_1 );
+        Py_XDECREF( exception_keeper_value_1 );
+        Py_XDECREF( exception_keeper_tb_1 );
+
+
+
+        goto try_except_handler_1;
+    }
+    PyTuple_SET_ITEM( tmp_right_name_1, 1, tmp_tuple_element_1 );
+    tmp_make_exception_arg_1 = BINARY_OPERATION_REMAINDER( tmp_left_name_1, tmp_right_name_1 );
+    Py_DECREF( tmp_right_name_1 );
+    if ( tmp_make_exception_arg_1 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+        Py_DECREF( exception_keeper_type_1 );
+        Py_XDECREF( exception_keeper_value_1 );
+        Py_XDECREF( exception_keeper_tb_1 );
+
+
+
+        goto try_except_handler_1;
+    }
+    {
+        PyObject *call_args[] = { tmp_make_exception_arg_1 };
+        tmp_raise_type_1 = CALL_FUNCTION_WITH_ARGS1( PyExc_TypeError, call_args );
+    }
+
+    Py_DECREF( tmp_make_exception_arg_1 );
+    assert( tmp_raise_type_1 != NULL );
+    exception_type = tmp_raise_type_1;
+    RAISE_EXCEPTION_WITH_TYPE( &exception_type, &exception_value, &exception_tb );
+
+    goto try_except_handler_1;
+    goto branch_end_2;
+    branch_no_2:;
+    // Re-raise.
+    exception_type = exception_keeper_type_1;
+    exception_value = exception_keeper_value_1;
+    exception_tb = exception_keeper_tb_1;
+    exception_lineno = exception_keeper_lineno_1;
+
+    goto try_except_handler_1;
+    branch_end_2:;
+    // End of try:
+    try_end_1:;
+    branch_no_1:;
+    tmp_called_name_1 = par_called;
+
+    CHECK_OBJECT( tmp_called_name_1 );
+    tmp_args_name_1 = par_star_arg_list;
+
+    CHECK_OBJECT( tmp_args_name_1 );
+    tmp_return_value = CALL_FUNCTION_WITH_POSARGS( tmp_called_name_1, tmp_args_name_1 );
+    if ( tmp_return_value == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+
+
+        goto try_except_handler_1;
+    }
+    goto try_return_handler_1;
+    // tried codes exits in all cases
+    NUITKA_CANNOT_GET_HERE( __internal__$$$function_5_complex_call_helper_star_list );
+    return NULL;
+    // Return handler code:
+    try_return_handler_1:;
+    CHECK_OBJECT( (PyObject *)par_called );
+    Py_DECREF( par_called );
+    par_called = NULL;
+
+    CHECK_OBJECT( (PyObject *)par_star_arg_list );
+    Py_DECREF( par_star_arg_list );
+    par_star_arg_list = NULL;
+
+    goto function_return_exit;
+    // Exception handler code:
+    try_except_handler_1:;
+    exception_keeper_type_2 = exception_type;
+    exception_keeper_value_2 = exception_value;
+    exception_keeper_tb_2 = exception_tb;
+    exception_keeper_lineno_2 = exception_lineno;
+    exception_type = NULL;
+    exception_value = NULL;
+    exception_tb = NULL;
+    exception_lineno = 0;
+
+    CHECK_OBJECT( (PyObject *)par_called );
+    Py_DECREF( par_called );
+    par_called = NULL;
+
+    Py_XDECREF( par_star_arg_list );
+    par_star_arg_list = NULL;
+
+    // Re-raise.
+    exception_type = exception_keeper_type_2;
+    exception_value = exception_keeper_value_2;
+    exception_tb = exception_keeper_tb_2;
+    exception_lineno = exception_keeper_lineno_2;
+
+    goto function_exception_exit;
+    // End of try:
+
+    // Return statement must have exited already.
+    NUITKA_CANNOT_GET_HERE( __internal__$$$function_5_complex_call_helper_star_list );
     return NULL;
 
 function_exception_exit:
@@ -2830,7 +2830,7 @@ NUITKA_CROSS_MODULE PyObject *impl___internal__$$$function_6_complex_call_helper
         goto branch_no_2;
     }
     branch_yes_2:;
-    tmp_left_name_1 = const_str_digest_6fe42bc7767704653d0465c04f34143d;
+    tmp_left_name_1 = const_str_digest_adc474dd61fbd736d69c1bac5d9712e0;
     tmp_right_name_1 = PyTuple_New( 2 );
     tmp_dircall_arg1_1 = par_called;
 
@@ -3972,7 +3972,7 @@ NUITKA_CROSS_MODULE PyObject *impl___internal__$$$function_8_complex_call_helper
         goto branch_no_4;
     }
     branch_yes_4:;
-    tmp_left_name_2 = const_str_digest_6fe42bc7767704653d0465c04f34143d;
+    tmp_left_name_2 = const_str_digest_adc474dd61fbd736d69c1bac5d9712e0;
     tmp_right_name_2 = PyTuple_New( 2 );
     tmp_dircall_arg1_2 = par_called;
 
@@ -5168,7 +5168,7 @@ NUITKA_CROSS_MODULE PyObject *impl___internal__$$$function_11_complex_call_helpe
         goto branch_no_2;
     }
     branch_yes_2:;
-    tmp_left_name_1 = const_str_digest_6fe42bc7767704653d0465c04f34143d;
+    tmp_left_name_1 = const_str_digest_adc474dd61fbd736d69c1bac5d9712e0;
     tmp_right_name_1 = PyTuple_New( 2 );
     tmp_dircall_arg1_1 = par_called;
 

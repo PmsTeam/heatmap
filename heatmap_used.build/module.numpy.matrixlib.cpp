@@ -62,13 +62,13 @@ static bool constants_created = false;
 
 static void createModuleConstants( void )
 {
-    const_str_digest_3fb6de539d1f6db9b33a9ac235cbf48e = UNSTREAM_STRING( &constant_bin[ 1248471 ], 45, 0 );
-    const_str_plain_defmatrix = UNSTREAM_STRING( &constant_bin[ 150708 ], 9, 1 );
-    const_str_digest_0bef2b0813c4d35b7609f913e06b43ea = UNSTREAM_STRING( &constant_bin[ 1248516 ], 64, 0 );
+    const_str_digest_3fb6de539d1f6db9b33a9ac235cbf48e = UNSTREAM_STRING( &constant_bin[ 1248407 ], 45, 0 );
+    const_str_plain_defmatrix = UNSTREAM_STRING( &constant_bin[ 150644 ], 9, 1 );
+    const_str_digest_0bef2b0813c4d35b7609f913e06b43ea = UNSTREAM_STRING( &constant_bin[ 1248452 ], 64, 0 );
     const_list_str_digest_3fb6de539d1f6db9b33a9ac235cbf48e_list = PyList_New( 1 );
     PyList_SET_ITEM( const_list_str_digest_3fb6de539d1f6db9b33a9ac235cbf48e_list, 0, const_str_digest_3fb6de539d1f6db9b33a9ac235cbf48e ); Py_INCREF( const_str_digest_3fb6de539d1f6db9b33a9ac235cbf48e );
-    const_str_digest_c1c76a979583f1d710d26ce88cbcfa7d = UNSTREAM_STRING( &constant_bin[ 1248580 ], 24, 0 );
-    const_str_digest_381c622f725abe8d57071caa40e751b2 = UNSTREAM_STRING( &constant_bin[ 1248604 ], 57, 0 );
+    const_str_digest_c1c76a979583f1d710d26ce88cbcfa7d = UNSTREAM_STRING( &constant_bin[ 1248516 ], 24, 0 );
+    const_str_digest_381c622f725abe8d57071caa40e751b2 = UNSTREAM_STRING( &constant_bin[ 1248540 ], 57, 0 );
 
     constants_created = true;
 }
